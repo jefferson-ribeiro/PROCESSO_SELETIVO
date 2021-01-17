@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Churrasco</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-    <header>
-        <div class="gama">
-            <h3>GAMA ACADEMY</h3>
+
+    <div id="conteudo">
+        <div>
+            <header>
+                <h3>GAMA ACADEMY</h3>
         </div>
+
         <div>
             <h1>Calculadora de Churrasco</h1>
         </div>
-    </header>
-    <section>
-        <div>
-            <h2>Comidas</h2> 
-            <p>Mulheres <input type="number" id="nMulheres"></p> 
-            <p>Homens <input type="number" id="nHomens"></p>
-            <p>Crianças <input type="number" id="nCriancas"></p>       
-        </div> 
-        <div>
-            <p>Acompanhamentos <input type="radio" id="acomp"></p>            
-        </div>
-        <div>
-            <h2>Bebidas </h2>
-            <p>Quantos bebem cerveja? <input type="number" id="nCerveja"></p>
-            <p>Quantos bebem refrigerante? <input type="number" id="nrefrigerante"></p>
-        </div>
-        <div id= calc>
-            <button type="button" onclick="calcular()" >Calculadora</button>
-        </div>
-    </section>
-    <footer>
-        <div id="res">
-             <p>aqui aparecerá o resultado</p>
-        </div>        
-    </footer>    
-    
+        </header>
+
+        <section>
+            <div class="dados">
+                <h2>Comidas</h2>
+                <input type="number" name="numeroM" id="nMulheres">
+                <p>Mulheres</p>
+
+                <input type="number" name="numeroH" id="nHomens">
+                <p>Homens</p>
+
+                <input type="number" name="numeroC" id="nCriancas">
+                <p>Crianças</p>
+            </div>
+            <div>
+                <p><input type="checkbox" name="flagAcomp" id="acomp">Acompanhamentos</p>
+            </div>
+            <div class="dados">
+                <h2>Bebidas</h2>
+                <p>Quantos bebem cerveja? <input type="number" id="nCerveja"></p>
+                <p>Quantos bebem refrigerante? <input type="number" id="nRefrigerante"></p>
+            </div>
+            <div id="calc" class="calcB">
+                <button type="button" onclick="calcular()">Calcular</button>
+            </div>
+        </section>
+
+        <footer>
+            <div id="res">
+                <p>Aqui aparecerá o resultado</p>
+            </div>
+        </footer>
+    </div>
+
 </body>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </html>
