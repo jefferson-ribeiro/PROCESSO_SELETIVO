@@ -48,6 +48,7 @@ function calcular(){
         res.innerHTML += `<p>Acompanhamentos: ${acompTotal}</p>`
         res.innerHTML += `<p>Bebidas alcóolicas: ${nCerv}L</p>`
         res.innerHTML += `<p>Bebidas não alcóolicas: ${nRefr}L</p>`
+        res.innerHTML += `<p>© JEFFERSON RIBEIRO - Processo Seletivo - Itaú</p>`
     }
 
     
